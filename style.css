@@ -1,3 +1,115 @@
-h1 {
-    color: green;
+body {
+    background: #333333;
+    color: white;
 }
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#input-area, #display-area {
+    
+    margin-top: 8%;
+    text-align: center;
+    
+    max-width: 375px;
+    
+    margin-left: auto;
+    margin-right: auto;
+/*    border: solid;*/
+} 
+
+
+#play-text {
+    font-family: 'Dancing Script', cursive;
+}
+
+#work-text {
+    font-family: 'Source Serif Pro', serif;
+}
+
+/* labels for play and work */
+.text-center {
+    margin-bottom: 10%;
+}
+
+
+
+#play-time {
+/*    display: inline;*/
+/*    border: solid;*/
+}
+
+#work-time {
+/*    display: inline;*/
+/*    border: solid;*/
+}
+
+.btn {
+    
+    width: 80%;
+
+    margin: auto;
+}
+
+/**
+ * Progress bars with centered text
+ */
+
+.progress {
+/*    position: relative;*/
+    color: white;
+    
+    
+    background: blue;
+    
+/*    max-width: 100%;*/
+    
+/*    the only thing that seems to change anything */
+    min-height: 200px;
+}
+
+#control-button-area {
+    
+    margin: 2%;
+    width: 90%;
+    text-align: center;
+    max-width: 375px;
+/*    max-width: 375px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#control-button {
+    width: 100%;
+}
+
+#notifcation-area {
+    text-align: center;
+}
+
+#current-session {
+    padding-top: 5%;
+    padding-bottom: 0%;
+    font-size: 2em;
+}
+
+#display-area {
+    margin-top: 0%;
+/*    border: solid green;*/
+    min-height: 200px;
+}
+
+#session-time {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 4em;
+}
+
