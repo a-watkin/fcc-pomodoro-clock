@@ -1,13 +1,5 @@
 $( document ).ready(function() {
 
-    // tests the script is being loaded
-    // alert('test');
-
-    // $.noConflict();
-    // jQuery(document).ready(function($){
-    //    alert('jQuery is working');
-    // });
-
     var playTime = 5;
     var workTime = 25;
     var currentSession = 'work';
@@ -16,8 +8,6 @@ $( document ).ready(function() {
     var workHasRun = false;
     var playHasRun = false;
     var intervalHandle;
-    
-    
     
     
     $('#session-time').text(workTime);
@@ -119,13 +109,11 @@ $( document ).ready(function() {
     }
     
     
-    
     function tick() {
         
         decrementTime();
         remainingTime();
     }
-    
     
     
     if( currentSession == 'work' ) {
@@ -197,12 +185,4 @@ $( document ).ready(function() {
             displayTime( workTime );
         }
     });
-    
-    
-    
-    
-    
-    
-    
-    
 });
