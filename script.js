@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+
+    var audio = new Audio('whisky_ding_short2.wav');
+
     var playTime = 5;
     var workTime = 25;
     var currentSession = 'work';
@@ -8,6 +11,9 @@ $( document ).ready(function() {
     var workHasRun = false;
     var playHasRun = false;
     var intervalHandle;
+
+    // sets time interval duration - changed for testing
+    var interval = 1000;
     
     
     $('#session-time').text(workTime);
@@ -79,20 +85,25 @@ $( document ).ready(function() {
     
     function runCountdown() {
         
+        // decrease remaining time
         if( workHasRun || playHasRun ) {
             decrementTime();
-            intervalHandle = setInterval(tick, 1000);
+            intervalHandle = setInterval(tick, interval);
 
         } else {
             
             if( currentSession == 'work' ) {
                 $('#current-session').text('werk werk werk');
+
+                audio.play();
                 
                 secondsRemaining = workTime * 60;
                 console.log('getting to work here?')
                 workHasRun = true;
             } else if( currentSession == 'play' ) {
                 $('#current-session').text('playful joy');
+
+                audio.play();
                 
                 console.log('getting to play here?')
                 secondsRemaining = playTime * 60;
@@ -101,7 +112,7 @@ $( document ).ready(function() {
             decrementTime();
             remainingTime();
             
-            intervalHandle = setInterval(tick, 1000);
+            intervalHandle = setInterval(tick, interval);
         }
     }
     
@@ -153,8 +164,9 @@ $( document ).ready(function() {
             displayTime( playTime );
         }
         
+        // Increment play time
         if( value == '+' ) {
-            console.log('a plus sign')
+            // console.log('a plus sign')
             playTime++;
             displayTime( playTime );
         }
