@@ -102,10 +102,7 @@ $( document ).ready(function() {
             remainingTime();
             
             intervalHandle = setInterval(tick, 1000);
-
-            
         }
-
     }
     
     
@@ -142,10 +139,9 @@ $( document ).ready(function() {
     }
     
     
-    
     $('#play-time').find('.btn').click(function() {
         playHasRun = false;
-//        console.log('testicles', $(this).text());
+
         let value = $(this).text();
         
         if( value == '-' ) {
@@ -166,7 +162,6 @@ $( document ).ready(function() {
     
     $('#work-time').find('.btn').click(function() {
         workHasRun = false;
-        console.log('testicles', $(this).text());
         
         let value = $(this).text();
         
