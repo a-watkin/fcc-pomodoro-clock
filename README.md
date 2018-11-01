@@ -2,7 +2,7 @@
 
 Made as part of free code camp front end projects.
 
-Plays an audio sound when the work or play time is done.
+Plays an audio sound when the work or play time is done. The sound does not work on CodePen as it depends on a local audio file.
 
 Uses:
 
