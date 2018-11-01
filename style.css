@@ -13,17 +13,18 @@ h2 {
     margin-bottom: 3%;
 }
 
-#input-area, #display-area {
-    
+#input-area,
+#display-area {
+
     margin-top: 8%;
     text-align: center;
-    
+
     max-width: 375px;
-    
+
     margin-left: auto;
     margin-right: auto;
-/*    border: solid;*/
-} 
+    /*    border: solid;*/
+}
 
 
 #play-text {
@@ -42,17 +43,17 @@ h2 {
 
 
 #play-time {
-/*    display: inline;*/
-/*    border: solid;*/
+    /*    display: inline;*/
+    /*    border: solid;*/
 }
 
 #work-time {
-/*    display: inline;*/
-/*    border: solid;*/
+    /*    display: inline;*/
+    /*    border: solid;*/
 }
 
 .btn {
-    
+
     width: 80%;
 
     margin: auto;
@@ -63,25 +64,25 @@ h2 {
  */
 
 .progress {
-/*    position: relative;*/
+    /*    position: relative;*/
     color: white;
-    
-    
+
+
     background: blue;
-    
-/*    max-width: 100%;*/
-    
-/*    the only thing that seems to change anything */
+
+    /*    max-width: 100%;*/
+
+    /*    the only thing that seems to change anything */
     min-height: 200px;
 }
 
 #control-button-area {
-    
+
     margin: 2%;
     width: 90%;
     text-align: center;
     max-width: 375px;
-/*    max-width: 375px;*/
+    /*    max-width: 375px;*/
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -103,7 +104,7 @@ h2 {
 
 #display-area {
     margin-top: 0%;
-/*    border: solid green;*/
+    /*    border: solid green;*/
     min-height: 200px;
 }
 
@@ -112,4 +113,3 @@ h2 {
     padding-bottom: 0%;
     font-size: 4em;
 }
-
