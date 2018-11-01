@@ -13,4 +13,5 @@ Uses:
 5. Google fonts
 
 [Live version on CodePen](https://codepen.io/adevwatkin/full/MGOvWj/)
+
 [View the code on CodePen](https://codepen.io/adevwatkin/pen/MGOvWj)
